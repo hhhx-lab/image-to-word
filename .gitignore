@@ -1,0 +1,18 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+
+# Local uploads and conversion results.
+data/jobs/
+data/cli/
+data/tmp/
+
+# Avoid committing generated documents or downloaded MinerU bundles.
+*.docx
+*.zip
+*.pdf

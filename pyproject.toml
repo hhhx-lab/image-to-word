@@ -1,0 +1,25 @@
+[project]
+name = "image-to-word"
+version = "0.1.0"
+description = "Convert images and PDFs into editable Word documents with MinerU."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "fastapi>=0.111.0",
+  "python-dotenv>=1.0.1",
+  "python-multipart>=0.0.9",
+  "requests>=2.32.0",
+  "uvicorn[standard]>=0.30.0",
+]
+
+[project.scripts]
+image-to-word = "image_to_word.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
