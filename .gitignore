@@ -16,3 +16,12 @@ data/tmp/
 *.docx
 *.zip
 *.pdf
+
+# Local agent state, browser diagnostics, and credentials.
+.codex/
+.playwright-cli/
+.playwright-mcp/
+.env*
+!.env.example
+!.env.*.example
+*.env
